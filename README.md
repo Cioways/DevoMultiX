@@ -14,13 +14,13 @@ DevoMultiX
 
 ---
 
-📜 Lizenzen
+📜 Lizenzierung
 
-📜 Software: GNU General Public License v3 (GPLv3)
+🖥 Software & Firmware → [GNU General Public License v3 (GPLv3)](LICENSE) 
+ 
+🔩 Hardware & PCB-Designs → [CERN Open Hardware License v2](LICENSE-HARDWARE)  
 
-🔩 Hardware: CERN Open Hardware License v2 (CERN OHL)
-
-📖 Dokumentation: Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)
+📖 Dokumentation & Wiki → [Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)](LICENSE-DOCS)  
 
 
 Dieses Projekt bleibt Open Source und darf nicht in proprietäre Produkte umgewandelt werden.
@@ -43,7 +43,7 @@ Dieses Projekt bleibt Open Source und darf nicht in proprietäre Produkte umgewa
 
 1️⃣ Hardware aufbauen
 
-📌 Bestelle oder erstelle die Platine (Gerber-Files in HARDWARE/).
+📌 erstelle die Platine (Gerber-Files in HARDWARE/).
 📌 Löte die Bauteile gemäß der Stückliste (BOM.txt).
 
 2️⃣ Firmware flashen
