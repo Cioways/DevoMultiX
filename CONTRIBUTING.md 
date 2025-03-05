@@ -1,0 +1,129 @@
+🛠 Contributing Guidelines
+
+Willkommen! 🎉 Wir freuen uns über jeden Beitrag zu DevoMultitron! Bevor du mit dem Entwickeln startest, lies bitte diese Richtlinien, um einen reibungslosen Ablauf für alle Beteiligten zu gewährleisten.
+
+
+---
+
+📌 Wie kannst du beitragen?
+
+Es gibt viele Möglichkeiten, am Projekt mitzuwirken:
+
+📝 1. Fehler melden (Bug Reports)
+
+Hast du einen Fehler gefunden? Bitte erstelle ein Issue:
+1️⃣ Gehe zu Issues.
+2️⃣ Klicke auf "New Issue".
+3️⃣ Beschreibe das Problem mit:
+
+Schritt-für-Schritt-Anleitung, um es nachzustellen.
+
+Erwartetes Verhalten vs. tatsächliches Verhalten.
+
+Screenshots oder Log-Dateien helfen oft.
+
+
+
+---
+
+💡 2. Neue Funktionen vorschlagen
+
+Wenn du eine Idee für ein neues Feature hast:
+1️⃣ Suche zuerst in den Issues, ob das Thema bereits existiert.
+2️⃣ Falls nicht, erstelle ein neues Feature Request Issue mit einer kurzen Beschreibung.
+3️⃣ Falls du selbst daran arbeiten möchtest, schreibe dazu, dass du es umsetzen willst.
+
+
+---
+
+🖥 3. Code beitragen (Pull Requests)
+
+Hast du einen Fix oder ein neues Feature entwickelt? Super! So kannst du deinen Code einreichen:
+
+1️⃣ Forke das Repository und klone es:
+
+git clone https://github.com/DevoMultitron.git
+cd DevoMultitron
+
+2️⃣ Erstelle einen Branch für deine Änderung:
+
+git checkout -b feature-meine-neue-funktion
+
+3️⃣ Code schreiben & testen.
+4️⃣ Commit & Push:
+
+git add .
+git commit -m "Feature: Meine neue Funktion hinzugefügt"
+git push origin feature-meine-neue-funktion
+
+5️⃣ Pull Request (PR) auf GitHub erstellen.
+6️⃣ Erklärung im PR: Was wurde geändert & warum?
+
+📌 Wichtig: Dein Code muss sich an die folgenden Regeln halten: ✅ Sauber & dokumentiert → Schreibe Kommentare, wenn nötig.
+✅ Kein unnötiger Code → Entferne Debug-Logs vor dem PR.
+✅ Code getestet → Falls möglich, teste deinen Code vorher.
+
+
+---
+
+🧩 4. Eigene Skripte & Plugins einreichen
+
+Das Projekt erlaubt Community-Skripte & Erweiterungen. Falls du ein eigenes Skript beisteuern willst:
+1️⃣ Erstelle einen neuen Ordner unter /SCRIPTS/ mit deinem Namen.
+2️⃣ Füge eine README.md hinzu, die erklärt, was das Skript macht.
+3️⃣ Falls dein Skript Abhängigkeiten hat, erstelle eine requirements.txt.
+4️⃣ Teste dein Skript, bevor du einen PR einreichst.
+
+Beispielstruktur:
+
+/SCRIPTS/
+ ├── wlan_db_meter/
+ │   ├── main.py
+ │   ├── README.md
+ │   ├── config.json
+ ├── nfc_sniffer/
+ │   ├── main.py
+ │   ├── README.md
+
+
+---
+
+📚 Dokumentation verbessern
+
+Falls du Fehler in der Dokumentation findest oder neue Inhalte hinzufügen willst:
+
+Bearbeite die Wiki-Seiten oder reiche einen PR mit neuen Doku-Dateien in /DOCS/ ein.
+
+
+
+---
+
+⚠ Code of Conduct
+
+Bitte halte dich an folgende Verhaltensregeln:
+✅ Respektiere andere Entwickler.
+✅ Keine beleidigenden oder diskriminierenden Kommentare.
+✅ Sei geduldig mit neuen Mitwirkenden.
+
+
+---
+
+📬 Fragen & Community
+
+Falls du Fragen hast oder dich mit anderen Entwicklern austauschen willst:
+
+📌 GitHub Discussions: Hier diskutieren
+
+📌 Discord-Server: Link zum Discord
+
+📌 Twitter/X: @DevoMultitron
+
+
+
+---
+
+🚀 Let’s build something awesome together!
+
+Danke, dass du zu DevoMultitron beitragen möchtest! 🛠💡
+
+Falls du noch Änderungen oder Anpassungen möchtest, sag einfach Bescheid! 😊
