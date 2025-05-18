@@ -5,16 +5,20 @@ DevoMultiX ist ein tragbares Open-Source-Gerät auf Basis des Raspberry Pi Zero 
 🧠 Features (Funktionen)
 🔌 Protokollanalyse & Kommunikation:
 UART, SPI, I²C, CAN, RS232, RS485
+
 📶 Signalverarbeitung:
 Logikanalysator (kompatibel mit sigrok / PulseView)
 GPIO-Analyse, Bit-Banging, Spannungsmessung
+
 🌐 Netzwerkanalyse:
 Tools wie nmap, airodump-ng, reaver, uvm.
 Wi-Fi Sniffing & Bluetooth BLE Analyse
+
 🧰 Reverse Engineering & Debugging:
 Unterstützung für Ghidra, binwalk, firmware-mod-kit, radare2
 USB Sniffing & Man-in-the-Middle (USB Proxy)
 Optional: SWD / JTAG Debugging
+
 💻 Benutzeroberfläche:
 Touchscreen-GUI ohne Desktop-Umgebung (direkt auf dem Pi)
 GPIO-Tastensteuerung
