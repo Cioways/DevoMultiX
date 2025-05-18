@@ -3,19 +3,35 @@
 DevoMultiX ist ein tragbares Open-Source-Gerät auf Basis des Raspberry Pi Zero 2 W und des RP2040. Es kombiniert leistungsstarke Funktionen für Reverse Engineering, Netzwerkanalyse, Signal-Sniffing, Protokollanalyse und vieles mehr – alles in einem kompakten, benutzerfreundlichen Tool für Maker, Hacker, Pentester und Elektronikentwickler.
 
 🧠 Features (Funktionen)
+
 🔌 Protokollanalyse & Kommunikation:
-UART, SPI, I²C, CAN, RS232, RS485
+UART, 
+SPI, 
+I²C, 
+CAN, 
+RS232, 
+RS485
 
 📶 Signalverarbeitung:
+
 Logikanalysator (kompatibel mit sigrok / PulseView)
-GPIO-Analyse, Bit-Banging, Spannungsmessung
+GPIO-Analyse, 
+Bit-Banging, 
+Spannungsmessung
 
 🌐 Netzwerkanalyse:
-Tools wie nmap, airodump-ng, reaver, uvm.
+
+Tools wie nmap, 
+airodump-ng, 
+reaver, uvm.
 Wi-Fi Sniffing & Bluetooth BLE Analyse
 
 🧰 Reverse Engineering & Debugging:
-Unterstützung für Ghidra, binwalk, firmware-mod-kit, radare2
+
+Unterstützung für Ghidra, 
+binwalk, 
+firmware-mod-kit, 
+radare2
 USB Sniffing & Man-in-the-Middle (USB Proxy)
 Optional: SWD / JTAG Debugging
 
