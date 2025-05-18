@@ -6,7 +6,7 @@ DevoMultiX
 
 🚀 Features
 
-✅ ESP32 & RP2040 basiertes Multitool für verschiedene Anwendungen
+✅ RPI Zero 2 W basiertes Multitool für verschiedene Anwendungen
 ✅ Erweiterbar durch Community-Skripte für WLAN-Analyse, NFC, etc.
 ✅ Open Source & modifizierbar
 ✅ Platine & Gehäuse-Design als Open Hardware verfügbar
@@ -30,9 +30,7 @@ Dieses Projekt bleibt Open Source und darf nicht in proprietäre Produkte umgewa
 📦 Projektstruktur
 
 📂 HARDWARE/ → PCB-Designs & Stückliste (BOM)
-📂 FIRMWARE/ → ESP32 & RP2040 Code
-📂 SOFTWARE/ → Begleit-Software (z. B. für PC oder Smartphone)
-📂 SCRIPTS/ → Community-Erweiterungen & Plugins
+📂 Programm/ → RPI Zero 2 W Scripte
 📂 DOCS/ → Anleitungen, Bilder & Tutorials
 📂 LICENSE/ → Enthält alle Lizenzinformationen
 
@@ -48,12 +46,8 @@ Dieses Projekt bleibt Open Source und darf nicht in proprietäre Produkte umgewa
 
 2️⃣ Firmware flashen
 
-📌 Installiere esptool für ESP32:
+📌 Installiere Kali Linux für RPI Zero 2 W:
 
-pip install esptool
-esptool.py --chip esp32 write_flash 0x1000 firmware.bin
-
-📌 Falls du die RP2040-Software flashen willst, nutze RPi Boot.
 
 
 ---
@@ -73,7 +67,7 @@ Wir freuen uns über neue Ideen & Code-Beiträge! Bitte lies die CONTRIBUTING.md
 📬 Kontakt & Community
 
 ✉ Discord-Server: Link zum Discord
-🐦 Twitter/X: @DevoMultitron
+🐦 Twitter/X: @DevoMultiX
 💬 GitHub Discussions: Hier diskutieren
 
 
@@ -82,8 +76,9 @@ Wir freuen uns über neue Ideen & Code-Beiträge! Bitte lies die CONTRIBUTING.md
 📅 Roadmap & To-Do
 
 🟢 Phase 1 – Erste Beta-Version mit Basisfunktionen 🔄 In Arbeit
+
 🟡 Phase 2 – Community-Erweiterungen & Plugin-Architektur 🚧 Geplant
-🔴 Phase 3 – Kommerzielle Version mit optionalen Extras 💡 Zukünftige Idee
+
 
 
 ---
