@@ -1,82 +1,86 @@
-📟 DevoMultiX – Das ultimative Multi-Tool für Reverse Engineering & Netzwerkanalyse
+DevoMultiX
 
-DevoMultiX ist ein tragbares Open-Source-Gerät auf Basis des Raspberry Pi Zero 2 W und des RP2040. Es kombiniert leistungsstarke Funktionen für Reverse Engineering, Netzwerkanalyse, Signal-Sniffing, Protokollanalyse und vieles mehr – alles in einem kompakten, benutzerfreundlichen Tool für Maker, Hacker, Pentester und Elektronikentwickler.
+Ein tragbares Multitool für Elektronik- und Netzwerkanalyse – basierend auf dem ESP32, mit geplanter Erweiterung durch den RP2040.
 
-🧠 Features (Funktionen)
+Was ist das?
 
-🔌 Protokollanalyse & Kommunikation:
-UART, 
-SPI, 
-I²C, 
-CAN, 
-RS232, 
-RS485
+DevoMultiX ist ein kompaktes Diagnose- und Analysegerät, entwickelt für Reverse Engineering, Signal- und Spannungsmessung sowie grundlegende Netzwerktools. Es soll als universelles Handheld-Gerät in Labor oder Feld dienen – für Bastler, Entwickler und Techniker.
 
-📶 Signalverarbeitung:
+Aktuell implementierte Funktionen (ESP32-basiert)
 
-Logikanalysator (kompatibel mit sigrok / PulseView)
-GPIO-Analyse, 
-Bit-Banging, 
+WLAN- und Ethernet-Scan
+Netzwerkgeräte aufspüren, ARP-Scan, MAC-Analyse.
+Netzwerk-Tools
+Ping, Traceroute, IP-Eingabe über Tastenmenü.
+Touchscreen-Menü
+1.77" SPI-Display (AZDelivery), Navigation mit 6 Hardwaretasten.
+RS232 & RS485-Support
+Kommunikation via MAX3232 (RS232) und MAX3485 (RS485).
+IR-Kommunikation
+IR-Signale lesen (TSOP4838) & senden – z. B. für TV-Codes oder Analyse von Fernbedienungen.
 Spannungsmessung
+DC-Messung bis 48 V geplant – aktuell einfache Durchgangsprüfung vorhanden.
+Geplante Features
 
-🌐 Netzwerkanalyse:
+Diese Funktionen sind in Arbeit oder für die nächsten Revisionen vorgesehen:
 
-Tools wie nmap, 
-airodump-ng, 
-reaver, uvm.
-Wi-Fi Sniffing & Bluetooth BLE Analyse
+Hardware:
+Akku mit Lademanagement
+Autarker Betrieb ohne permanente USB-Stromversorgung.
+Sub-1 GHz Funkmodul (400–800 MHz)
+Für z. B. ASK/OOK-Signale (Garagentor, Funktaster etc.).
+RP2040-Erweiterung
+Wird als Coprozessor für präzises Timing & Protokollhandling eingebunden.
+Software/Firmware (RP2040):
+Logikanalyse / Sampling-Modus
+Unterstützung für sigrok/PulseView-kompatible Logik-Analyse.
+PIO-basierte Protokolle
+I²C, SPI, 1‑Wire, WS2812, Manchester usw.
+Bitbanging & Protokoll-Sniffing
+Generierung und Analyse proprietärer Signale, z. B. für Reverse Engineering.
+USB HID Simulation (Rubber Ducky Style)
+Tastatureingaben über USB simulieren, automatisierte Eingaben.
+SWD / JTAG-Schnittstelle (geplant)
+Für Debugging und Firmware-Analyse.
+Zielgruppen
 
-🧰 Reverse Engineering & Debugging:
+Hardware-Hacker
+Reverse Engineers
+Embedded-Entwickler
+Netzwerk-/Security-Techniker
+Makers & Bastler
+Aufbau
 
-Unterstützung für Ghidra, 
-binwalk, 
-firmware-mod-kit, 
-radare2
-USB Sniffing & Man-in-the-Middle (USB Proxy)
-Optional: SWD / JTAG Debugging
+ESP32-WROOM-32E mit 8 MB Flash
+RP2040 (Pi Pico oder Connect-Variante) – geplant
+SPI-Display (1.77")
+RS232 über MAX3232
+RS485 über MAX3485
+TSOP4838 IR-Empfänger + IR-LED
+6 Navigationstasten
+Messanschlüsse (DC, IR, UART, etc.)
+Spannungsversorgung: USB / Akku (geplant)
+Quickstart
 
-💻 Benutzeroberfläche:
-Touchscreen-GUI ohne Desktop-Umgebung (direkt auf dem Pi)
-GPIO-Tastensteuerung
+⚠️ In Entwicklung – kein fertiges Produkt!
+ESP32 flashen mit main.ino (Arduino IDE empfohlen)
+Menüstruktur per Tasten testen
+Netzwerk-Tools ausprobieren
+Seriellen Monitor zur Debug-Ausgabe verwenden
+Mitmachen
 
-🧰 Komponenten
-Modul / IC	Funktion
-Raspberry Pi Zero 2 W	Hauptprozessor / OS / Wi-Fi
-RP2040	Echtzeitfunktionen, GPIO, LA
-CC1101	Sub-1GHz RF-Transceiver
-CH9328	USB-HID Chip (für Tastaturfunktionen)
-Diverse Pegelwandler, Schutzschaltungen & USB-Hub	
-📸 Screenshots (optional)
-Hier könntest du 1–3 Bilder oder Diagramme einfügen, z. B. von der GUI, dem Gerät, dem PCB-Design oder einer Funktion.
+Pull Requests, Issues und Feedback jederzeit willkommen. Besonders gesucht:
 
-🚀 Getting Started
-🔧 Voraussetzungen
+Erweiterungen für das Menüsystem
+PIO-Code für den RP2040
+Ideen für neue Messfunktionen
+Gehäuse-Vorschläge (3D-Druck)
+Lizenz
 
-Raspberry Pi Zero 2 W mit Raspbian Lite (empfohlen)
-RP2040 mit eigenem Firmware-Image
-Optional: Bildschirm + Touch oder GPIO-Buttons
-🛠️ Installation
+MIT License – Open Source, gerne weiterentwickeln.
 
-git clone https://github.com/Cioways/DevoMultiX.git
-cd DevoMultiX
-# Weitere Anleitungen folgen…
-
-👥 Mitmachen & Beiträge
-Du hast Ideen, willst Bugs melden oder mitentwickeln? Großartig!
-
-📌 Möglichkeiten:
-
-Code verbessern oder neue Funktionen hinzufügen
-Dokumentation ausbauen
-Bugs und Vorschläge als GitHub-Issues melden
-Erfahrungen teilen
-→ Siehe CONTRIBUTING.md (folgt)
-
-📄 Lizenz
-Dieses Projekt steht unter der MIT-Lizenz – frei nutzbar für eigene Projekte!
-
-🔎 Keywords (für bessere Auffindbarkeit)
-Reverse Engineering, Logic Analyzer, RP2040, Raspberry Pi Zero 2 W, CAN, SPI, UART, nmap, airodump, Bluetooth Sniffer, USB Proxy, Open Source, Portable Pentest Tool
+Kontakt:
+github.com/Cioways
 
 📜 Lizenzierung
 
