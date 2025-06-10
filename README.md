@@ -66,16 +66,23 @@ Power supply: USB / battery (planned)
 Quickstart
 Pull requests, issues, and feedback are always welcome! Especially looking for:
 
-PCB design ideas and tips
+PCB design ideas and tips:
+
 Menu system extensions
+
 Code contributions for RP2040/ESP32
+
 Ideas for new measurement features
+
 Case/enclosure suggestions (3D printable)
 
 Contact:
 github.com/Cioways
 
 📜 Licensing
+
 🖥 Software & Firmware → GNU General Public License v3 (GPLv3)
+
 🔩 Hardware & PCB Designs → CERN Open Hardware License v2
+
 📖 Documentation & Wiki → Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)
