@@ -76,10 +76,11 @@ Ideas for new measurement features
 
 Case/enclosure suggestions (3D printable)
 
-Contact:
-github.com/Cioways/DevoMultiX
+Contact:  
+https://github.com/Cioways/DevoMultiX
 
 📜 Licensing
-🖥 Software & Firmware → GNU General Public License v3 (GPLv3)
-🔩 Hardware & PCB Designs → CERN Open Hardware License v2
-📖 Documentation & Wiki → Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)
+
+🖥 Software & Firmware → [GNU General Public License v3 (GPLv3)](https://github.com/Cioways/DevoMultiX/blob/main/LICENSE)  
+🔩 Hardware & PCB Designs → [CERN Open Hardware License v2](https://github.com/Cioways/DevoMultiX/blob/main/LICENSE-HARDWARE)  
+📖 Documentation & Wiki → [Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)](https://github.com/Cioways/DevoMultiX/blob/main/LICENSE-DOCS)
