@@ -1,4 +1,4 @@
-DevoMultiX
+DevoMultiX !!!Noch in Entwicklung!!!
 
 Ein tragbares Multitool für Elektronik- und Netzwerkanalyse – basierend auf dem ESP32, mit geplanter Erweiterung durch den RP2040.
 
@@ -25,25 +25,35 @@ Geplante Features
 Diese Funktionen sind in Arbeit oder für die nächsten Revisionen vorgesehen:
 
 Hardware:
+
 Akku mit Lademanagement
 Autarker Betrieb ohne permanente USB-Stromversorgung.
+
 Sub-1 GHz Funkmodul (400–800 MHz)
 Für z. B. ASK/OOK-Signale (Garagentor, Funktaster etc.).
+
 RP2040-Erweiterung
 Wird als Coprozessor für präzises Timing & Protokollhandling eingebunden.
 Software/Firmware (RP2040):
+
 Logikanalyse / Sampling-Modus
+
 Unterstützung für sigrok/PulseView-kompatible Logik-Analyse.
+
 PIO-basierte Protokolle
-I²C, SPI, 1‑Wire, WS2812, Manchester usw.
+
+I²C, SPI, 1‑Wire, 
 Bitbanging & Protokoll-Sniffing
+
 Generierung und Analyse proprietärer Signale, z. B. für Reverse Engineering.
+
 USB HID Simulation (Rubber Ducky Style)
 Tastatureingaben über USB simulieren, automatisierte Eingaben.
+
 SWD / JTAG-Schnittstelle (geplant)
 Für Debugging und Firmware-Analyse.
-Zielgruppen
 
+Zielgruppen:
 Hardware-Hacker
 Reverse Engineers
 Embedded-Entwickler
@@ -62,22 +72,16 @@ Messanschlüsse (DC, IR, UART, etc.)
 Spannungsversorgung: USB / Akku (geplant)
 Quickstart
 
-⚠️ In Entwicklung – kein fertiges Produkt!
-ESP32 flashen mit main.ino (Arduino IDE empfohlen)
-Menüstruktur per Tasten testen
-Netzwerk-Tools ausprobieren
-Seriellen Monitor zur Debug-Ausgabe verwenden
-Mitmachen
+
 
 Pull Requests, Issues und Feedback jederzeit willkommen. Besonders gesucht:
 
+PCB Design Ideen, Tipps etc
 Erweiterungen für das Menüsystem
-PIO-Code für den RP2040
+Code für den RP2040/ESP32
 Ideen für neue Messfunktionen
 Gehäuse-Vorschläge (3D-Druck)
-Lizenz
 
-MIT License – Open Source, gerne weiterentwickeln.
 
 Kontakt:
 github.com/Cioways
