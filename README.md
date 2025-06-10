@@ -1,97 +1,81 @@
-DevoMultiX !!!Noch in Entwicklung!!!
+DevoMultiX
+!!!Still in Development!!!
 
-Ein tragbares Multitool für Elektronik- und Netzwerkanalyse – basierend auf dem ESP32, mit geplanter Erweiterung durch den RP2040.
+A portable multitool for electronics and network analysis – based on the ESP32, with planned expansion via the RP2040.
 
-Was ist das?
+What is it?
+DevoMultiX is a compact diagnostic and analysis device designed for reverse engineering, signal and voltage measurement, and basic network tools. It’s intended as a universal handheld device for use in the lab or field – ideal for hobbyists, developers, and technicians.
 
-DevoMultiX ist ein kompaktes Diagnose- und Analysegerät, entwickelt für Reverse Engineering, Signal- und Spannungsmessung sowie grundlegende Netzwerktools. Es soll als universelles Handheld-Gerät in Labor oder Feld dienen – für Bastler, Entwickler und Techniker.
+Currently Implemented Features (ESP32-based)
+Wi-Fi Scanning
+Discover network devices, perform ARP scans, and analyze MAC addresses.
+1.77" SPI display (AZDelivery) with navigation through 6 hardware buttons.
+RS232 & RS485 Support
+Communication via MAX3232 (RS232) and MAX3485 (RS485).
+IR Communication
+Read IR signals (TSOP4838) and transmit them – e.g., for TV codes or remote control analysis.
 
-Aktuell implementierte Funktionen (ESP32-basiert)
-
-WLAN- und Ethernet-Scan
-Netzwerkgeräte aufspüren, ARP-Scan, MAC-Analyse.
-Netzwerk-Tools
-Ping, Traceroute, IP-Eingabe über Tastenmenü.
-Touchscreen-Menü
-1.77" SPI-Display (AZDelivery), Navigation mit 6 Hardwaretasten.
-RS232 & RS485-Support
-Kommunikation via MAX3232 (RS232) und MAX3485 (RS485).
-IR-Kommunikation
-IR-Signale lesen (TSOP4838) & senden – z. B. für TV-Codes oder Analyse von Fernbedienungen.
-Spannungsmessung
-DC-Messung bis 48 V geplant – aktuell einfache Durchgangsprüfung vorhanden.
-Geplante Features
-
-Diese Funktionen sind in Arbeit oder für die nächsten Revisionen vorgesehen:
+Planned Features
+These functions are currently in development or scheduled for future revisions:
 
 Hardware:
 
-Akku mit Lademanagement
-Autarker Betrieb ohne permanente USB-Stromversorgung.
+Battery with Charging Management
+Standalone operation without constant USB power.
 
-Sub-1 GHz Funkmodul (400–800 MHz)
-Für z. B. ASK/OOK-Signale (Garagentor, Funktaster etc.).
 
-RP2040-Erweiterung
-Wird als Coprozessor für präzises Timing & Protokollhandling eingebunden.
+Sub-1 GHz RF Module (400–800 MHz)
+For ASK/OOK signal analysis (e.g., garage doors, wireless switches, etc.).
+
+RP2040 Extension
+To be used as a coprocessor for precise timing and protocol handling.
 Software/Firmware (RP2040):
 
-Logikanalyse / Sampling-Modus
-
-Unterstützung für sigrok/PulseView-kompatible Logik-Analyse.
-
-PIO-basierte Protokolle
-
-I²C, SPI, 1‑Wire, 
-Bitbanging & Protokoll-Sniffing
-
-Generierung und Analyse proprietärer Signale, z. B. für Reverse Engineering.
-
+Logic Analyzer / Sampling Mode
+Support for sigrok/PulseView-compatible logic analysis.
+PIO-Based Protocol Handling
+I²C, SPI, 1-Wire,
+Bitbanging & protocol sniffing.
+Custom Signal Generation & Analysis
+For reverse engineering proprietary protocols.
 USB HID Simulation (Rubber Ducky Style)
-Tastatureingaben über USB simulieren, automatisierte Eingaben.
+Simulate keyboard input via USB, for automated keystroke injection.
+SWD / JTAG Interface (planned)
+For debugging and firmware analysis.
 
-SWD / JTAG-Schnittstelle (geplant)
-Für Debugging und Firmware-Analyse.
+Target Audience:
 
-Zielgruppen:
-Hardware-Hacker
-Reverse Engineers
-Embedded-Entwickler
-Netzwerk-/Security-Techniker
-Makers & Bastler
-Aufbau
+Hardware hackers
+Reverse engineers
+Embedded developers
+Network/security technicians
+Makers & DIY enthusiasts
+System Overview
 
-ESP32-WROOM-32E mit 8 MB Flash
-RP2040 (Pi Pico oder Connect-Variante) – geplant
-SPI-Display (1.77")
-RS232 über MAX3232
-RS485 über MAX3485
-TSOP4838 IR-Empfänger + IR-LED
-6 Navigationstasten
-Messanschlüsse (DC, IR, UART, etc.)
-Spannungsversorgung: USB / Akku (geplant)
+
+ESP32-WROOM-32E with 8 MB Flash
+RP2040 (Pi Pico or Connect variant) – planned
+1.77" SPI display
+RS232 via MAX3232
+RS485 via MAX3485
+TSOP4838 IR receiver + IR LED
+6 navigation buttons
+Measurement ports , IR, UART, etc.)
+Power supply: USB / battery (planned)
+
 Quickstart
+Pull requests, issues, and feedback are always welcome! Especially looking for:
 
+PCB design ideas and tips
+Menu system extensions
+Code contributions for RP2040/ESP32
+Ideas for new measurement features
+Case/enclosure suggestions (3D printable)
 
-
-Pull Requests, Issues und Feedback jederzeit willkommen. Besonders gesucht:
-
-PCB Design Ideen, Tipps etc
-Erweiterungen für das Menüsystem
-Code für den RP2040/ESP32
-Ideen für neue Messfunktionen
-Gehäuse-Vorschläge (3D-Druck)
-
-
-Kontakt:
+Contact:
 github.com/Cioways
 
-📜 Lizenzierung
-
-🖥 Software & Firmware → [GNU General Public License v3 (GPLv3)](LICENSE) 
- 
-🔩 Hardware & PCB-Designs → [CERN Open Hardware License v2](LICENSE-HARDWARE)  
-
-📖 Dokumentation & Wiki → [Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)](LICENSE-DOCS)  
-
-
+📜 Licensing
+🖥 Software & Firmware → GNU General Public License v3 (GPLv3)
+🔩 Hardware & PCB Designs → CERN Open Hardware License v2
+📖 Documentation & Wiki → Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)
