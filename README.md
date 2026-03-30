@@ -1,86 +1,118 @@
-DevoMultiX
-!!!Still in Development!!!
+# DevoMultiX – Open-Source Multitool for Hardware & Network Analysis
 
-A portable multitool for electronics and network analysis – based on the ESP32, with planned expansion via the RP2040.
+**!!!Still in Development!!!**
 
-What is it?
-DevoMultiX is a compact diagnostic and analysis device designed for reverse engineering, signal and voltage measurement, and basic network tools. It’s intended as a universal handheld device for use in the lab or field – ideal for hobbyists, developers, and technicians.
+DevoMultiX is a portable multitool for electronics and network analysis, based on the **ESP32**, with planned expansion via the **RP2040**. It is aimed at hobbyists, developers, technicians, and makers who want a compact tool for lab or field use.
 
-Currently Implemented Features (ESP32-based)
-Wi-Fi Scanning
-Discover network devices, perform ARP scans, and analyze MAC addresses.
-1.77" SPI display (AZDelivery) with navigation through 6 hardware buttons.
-RS232 & RS485 Support
-Communication via MAX3232 (RS232) and MAX3485 (RS485).
-IR Communication
-Read IR signals (TSOP4838) and transmit them – e.g., for TV codes or remote control analysis.
+---
 
-Planned Features
-These functions are currently in development or scheduled for future revisions:
+## 🔍 What is DevoMultiX?
 
-Hardware:
+A universal diagnostic and analysis device for:  
 
-Battery with Charging Management
-Standalone operation without constant USB power.
+- Reverse engineering  
+- Signal and voltage measurement  
+- Basic network tools  
 
+Designed as an all-in-one handheld tool with support for multiple interfaces and sensors.
 
-Sub-1 GHz RF Module (400–800 MHz)
-For ASK/OOK signal analysis (e.g., garage doors, wireless switches, etc.).
+---
 
-RP2040 Extension
-To be used as a coprocessor for precise timing and protocol handling.
-Software/Firmware (RP2040):
+## ⚡ Currently Implemented Features (ESP32-based)
 
-Logic Analyzer / Sampling Mode
-Support for sigrok/PulseView-compatible logic analysis.
-PIO-Based Protocol Handling
-I²C, SPI, 1-Wire,
-Bitbanging & protocol sniffing.
-Custom Signal Generation & Analysis
-For reverse engineering proprietary protocols.
-USB HID Simulation (Rubber Ducky Style)
-Simulate keyboard input via USB, for automated keystroke injection.
-SWD / JTAG Interface (planned)
-For debugging and firmware analysis.
+- **Wi-Fi Scanning**  
+  Discover network devices, perform ARP scans, and analyze MAC addresses.  
 
-Target Audience:
+- **1.77" SPI Display (AZDelivery)**  
+  Navigation via 6 hardware buttons  
 
-Hardware hackers
-Reverse engineers
-Embedded developers
-Network/security technicians
-Makers & DIY enthusiasts
-System Overview
+- **RS232 & RS485**  
+  Communication via MAX3232 (RS232) and MAX3485 (RS485)  
 
+- **IR Communication**  
+  Receive IR signals (TSOP4838) and transmit – e.g., TV codes or remote control analysis
 
-ESP32-WROOM-32E with 8 MB Flash
-RP2040 (Pi Pico or Connect variant) – planned
-1.77" SPI display
-RS232 via MAX3232
-RS485 via MAX3485
-TSOP4838 IR receiver + IR LED
-6 navigation buttons
-Measurement ports , IR, UART, etc.)
-Power supply: USB / battery (planned)
+---
 
-Quickstart
-Pull requests, issues, and feedback are always welcome! Especially looking for:
+## 🛠 Planned Features
 
-PCB design ideas and tips:
+**Hardware:**  
+- Battery with charging management (stand-alone operation without constant USB)  
+- Sub-1 GHz RF module (400–800 MHz) for ASK/OOK signals (garage doors, wireless switches, etc.)  
+- RP2040 extension for precise timing and protocol handling  
 
-Menu system extensions
+**Software/Firmware (RP2040):**  
+- Logic Analyzer / Sampling Mode (sigrok / PulseView compatible)  
+- PIO-based protocol handling: I²C, SPI, 1-Wire, Bitbanging  
+- Custom signal generation & analysis for reverse engineering  
+- USB HID simulation (Rubber Ducky style)  
+- SWD / JTAG interface (planned)
 
-Code contributions for RP2040/ESP32
+---
 
-Ideas for new measurement features
+## 🎯 Target Audience
 
-Case/enclosure suggestions (3D printable)
+- Hardware hackers & reverse engineers  
+- Embedded developers  
+- Network/security technicians  
+- Makers & DIY enthusiasts
 
-Contact:  
-https://github.com/Cioways/DevoMultiX
+---
 
-📜 Licensing
+## 🖥 System Overview
 
-🖥 Software & Firmware → [GNU General Public License v3 (GPLv3)](https://github.com/Cioways/DevoMultiX/blob/main/LICENSE)  
-🔩 Hardware & PCB Designs → [CERN Open Hardware License v2](https://github.com/Cioways/DevoMultiX/blob/main/LICENSE-HARDWARE)  
-📖 Documentation & Wiki → [Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)](https://github.com/Cioways/DevoMultiX/blob/main/LICENSE-DOCS)
+- **ESP32-WROOM-32E** with 8 MB Flash  
+- **RP2040** (Pi Pico or Connect variant, planned)  
+- **1.77" SPI Display**  
+- **RS232 & RS485** via MAX3232 / MAX3485  
+- **IR Receiver TSOP4838 + IR LED**  
+- **6 navigation buttons**  
+- **Measurement ports** for IR, UART, etc.  
+- **Power supply:** USB / Battery (planned)
+
+---
+
+## 🚀 Quickstart & Contributing
+
+Pull requests, issues, and feedback are always welcome! Especially looking for:  
+
+- PCB design tips  
+- Menu system extensions  
+- Code contributions for ESP32 / RP2040  
+- Ideas for new measurement features  
+- 3D-printable case suggestions  
+
+**Contact & Repository:**  
+[GitHub – DevoMultiX](https://github.com/Cioways/DevoMultiX)
+
+---
+
+## 📜 Licensing
+
+- **Software & Firmware:** [GNU GPLv3](https://github.com/Cioways/DevoMultiX/blob/main/LICENSE)  
+- **Hardware & PCB Designs:** [CERN OHL v2](https://github.com/Cioways/DevoMultiX/blob/main/LICENSE-HARDWARE)  
+- **Documentation & Wiki:** [CC BY-SA 4.0](https://github.com/Cioways/DevoMultiX/blob/main/LICENSE-DOCS)
+
+---
+
+## 📝 Current “Good First Issues”
+
+- Create GUI mockup for main menu  
+- Write LED test script for ESP32  
+- Add breadboard photos & PCB screenshots  
+- Extend firmware documentation  
+
+*(More issues will follow over time.)*
+
+---
+
+## 📷 Screenshots / Mockups
+
+*(Add images here: breadboard setup, GUI mockups, PCB layout)*
+
+---
+
+## 🔗 Community & Communication
+
+- **Reddit:** r/devomultix
+- **Discord:** https://discord.gg/gyrREMtuS6
