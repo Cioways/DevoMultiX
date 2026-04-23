@@ -1,4 +1,4 @@
-site_name: DevoMultiX Documentation
+site_name: site_url: https://cioways.github.io/DevoMultiX/
 theme:
   name: material
   palette:
