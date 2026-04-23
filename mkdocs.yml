@@ -1,0 +1,59 @@
+site_name: DevoMultiX Documentation
+theme:
+  name: material
+  palette:
+    # Light Mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: pink
+      toggle:
+        icon: material/weather-night
+        name: Switch to Dark Mode
+
+    # Dark Mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to Light Mode
+  features:
+    - navigation.tabs # Top menu instead of left
+    - search.suggest # Smart search
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - Home: index.md
+  - Project Status:
+      - Roadmap: roadmap.md
+      - Changelog: changelog.md
+  - Features:
+      - Reverse Engineering: reverse_engineering.md
+      - Signal Measurement: signal_measurement.md
+      - Network Analysis: network_analysis.md
+  - Hardware: 
+      - Overview: hardware.md
+      - Circuits: circuits.md
+  - Software: 
+      - Overview: software.md
+      - Install: install.md
+      - ESP32 Firmware: esp32_firmware.md
+  - Community & Contributing:
+      - Getting Started / Installation: installation.md
+      - Adding New Scripts: scripts.md
+      - Contributing: contributing.md
+  - Legal:
+      - Imprint: impressum.md
+      - Disclaimer: disclaimer.md

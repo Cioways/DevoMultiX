@@ -1,0 +1,55 @@
+/* ==== CYBERPUNK AESTHETIC ==== */
+:root > * {
+  /* Neon Purple / Cyan Overrides */
+  --md-primary-fg-color:        #4b0082; /* Dark Purple */
+  --md-primary-fg-color--light: #6a0dad;
+  --md-primary-fg-color--dark:  #300060;
+  
+  --md-accent-fg-color:         #00F0FF; /* Neon blue/cyan */
+}
+
+/* Spezifische Anpassungen für den Dark Mode (Slate) */
+[data-md-color-scheme="slate"] {
+  /* Tiefes, fast schwarzes Lila als Hintergrund */
+  --md-default-bg-color: #0d0614; 
+  --md-default-bg-color--light: #160a22; 
+  --md-default-bg-color--lighter: #200f30;
+  --md-default-bg-color--lightest: #29143e;
+  
+  /* Link-Farbe auf Neon-Cyan */
+  --md-typeset-a-color: #00F0FF;
+}
+
+/* Leuchtende Überschriften für den echten Cyberpunk-Vibe */
+[data-md-color-scheme="slate"] h1, 
+[data-md-color-scheme="slate"] h2 {
+  text-shadow: 0 0 8px rgba(106, 13, 173, 0.7);
+  color: #bfa1e6;
+}
+
+/* Glowing Grid Cards (Unsere Feature-Boxen) */
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > * {
+  border: 1px solid #4b0082;
+  background-color: rgba(22, 10, 34, 0.8);
+  box-shadow: 0 0 10px rgba(106, 13, 173, 0.15);
+  transition: all 0.3s ease;
+}
+
+/* Hover-Effekt für die Feature-Boxen: Cyan-Glow */
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > *:hover {
+  border-color: #00F0FF;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Admonition (Warnungen) auffälliger machen (Neon-Rot für Danger) */
+[data-md-color-scheme="slate"] .md-typeset .admonition.danger, 
+[data-md-color-scheme="slate"] .md-typeset details.danger {
+  border-color: #ff0055;
+  box-shadow: 0 0 15px rgba(255, 0, 85, 0.2);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition.danger > .admonition-title {
+  background-color: rgba(255, 0, 85, 0.1);
+  text-shadow: 0 0 5px rgba(255, 0, 85, 0.8);
+}
